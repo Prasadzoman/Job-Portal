@@ -1,0 +1,80 @@
+/* Container for the entire listing */
+.listing-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align content to the top */
+    margin-top: 20px; /* Optional margin at the top */
+    padding: 20px; /* Optional padding */
+  }
+  
+  /* Container for the job listings */
+  .job-listings {
+    display: grid; /* Using grid for the job items */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between job listings */
+    width: 100%; /* Ensures the job listings take full width */
+  }
+  
+  /* Styling for each job item */
+  .job-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .job-item:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+  
+  /* Job Image Styling */
+  .job-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  /* Job Details */
+  .job-details {
+    margin-top: 15px;
+  }
+  
+  .job-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .job-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .job-details li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Optional styling for buttons or extra features in the job item */
+  .apply-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #0056b3;
+  }
+  

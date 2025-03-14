@@ -1,0 +1,107 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    background-color: white;  /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 150px;  /* Increased height for the navbar */
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9900;
+  }
+  
+  .nav-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .nav-profile img:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;  /* Rounded left corner */
+    width: 200px;  /* Width for each input */
+  }
+  
+  .search-input:last-child {
+    border-radius: 0 4px 4px 0;  /* Rounded right corner for second input */
+  }
+  
+  .search-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;  /* Bluish button color */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .search-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 20px;
+      height: auto;
+    }
+  
+    .navbar-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-bottom: 10px;
+    }
+  
+    .nav-search {
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 180px;
+    }
+  
+    .search-btn {
+      width: 180px;
+    }
+  }
+  
